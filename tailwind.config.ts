@@ -26,7 +26,8 @@ const config = {
 			lineHeight: {
 				'negative': '-1',
 				'negative-two': '-2',
-				'negative-four': '-4'
+				'negative-four': '-4',
+				'extra-loose': '80px'
 			},
 			backgroundImage: {
 				'auth-bg': "url(/assets/signin-bg.svg)"
@@ -108,14 +109,25 @@ const config = {
 						opacity: "1",
 						transform: "translateY(0)",
 					}
-				}
+				},
+				spotlight: {
+					"0%": {
+						opacity: "0",
+						transform: "translate(-72%, -62%) scale(0.5)",
+					},
+					"100%": {
+						opacity: "1",
+						transform: "translate(-50%,-40%) scale(1)",
+					},
+				},
 			},
 			animation: {
 				"accordion-down": "accordion-down 0.2s ease-out",
 				"accordion-up": "accordion-up 0.2s ease-out",
 				"caret-blink": "caret-blink 1.25s ease-out infinite",
 				"slidein": "slidein var(--slidein-duration, 1s) ease var(--slidein-delay, 0ms) forwards",
-				"slideup": "slideup var(--slidein-duration, 1s) ease var(--slidein-delay, 0ms) forwards"
+				"slideup": "slideup var(--slidein-duration, 1s) ease var(--slidein-delay, 0ms) forwards",
+				spotlight: "spotlight 2s ease .75s 1 forwards",
 			},
 			transitionDuration: {
 				'two-seconds': '2000ms'

@@ -15,10 +15,9 @@ const RootNavbar = () => {
                 </div>
 
                 <div className={"flex gap-2 items-center"}>
-                    <Button className={"rounded-full bg-[#4258ff] text-white"} size={"md"}>
+                    <Button className={"rounded-full bg-indigo-600 text-white"} size={"sm"}>
                         Get Started
                     </Button>
-                    <ThemeToggle />
                 </div>
             </div>
         </nav>
